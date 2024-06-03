@@ -1,66 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
     <title>Cow-Culator</title>
     <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <h1>Cow-Culator</h1>
     <div class="container">
-        <div class="moo" id="moo">
-            Suprise me!
+      <div class="moo" id="moo">Suprise me!</div>
+      <div class="calculatorContainer">
+        <div class="resultDisplay">
+          <div id="displayTopRow"></div>
         </div>
-        <div class="calculatorContainer">
-            <div class="resultDisplay">
-                <div id="displayTopRow"></div>
-            </div>
-            <div class="keys">
-                <div class="row1">
-                    <button class="operators" value="C">C</button>
-                    <button class="operators" value="DEL">Del</button>
-                    <button class="operators" value="^">a<sup>b</sup></button>
-                    <button class="operators" value="/">&divide</button>
-                </div>
-                <div class="row2">
-                    <button class="digits" value="7">7</button>
-                    <button class="digits" value="8">8</button>
-                    <button class="digits" value="9">9</button>
-                    <button class="operators" value="*">&times</button>
-                </div>
-                <div class="row3">
-                    <button class="digits" value="4">4</button>
-                    <button class="digits" value="5">5</button>
-                    <button class="digits" value="6">6</button>
-                    <button class="operators" value="-">-</button>
-                </div>
-                <div class="row4">
-                    <button class="digits" value="1">1</button>
-                    <button class="digits" value="2">2</button>
-                    <button class="digits" value="3">3</button>
-                    <button class="operators" value="+">+</button>
-                </div>
-                <div class="row5">
-                    <button value="negative">+/-</button>
-                    <button class="digits" value="0">0</button>
-                    <button value="." id="decimalPoint">.</button>
-                    <button class="equalSign" value="=">=</button>
-                </div>
-            </div>
+        <div class="keys">
+          <div class="row1">
+            <button class="operators" value="C">C</button>
+            <button class="operators" value="DEL">Del</button>
+            <button class="operators" value="^">
+              a<sup style="pointer-events: none">b</sup>
+            </button>
+            <button class="operators" value="/">&divide</button>
+          </div>
+          <div class="row2">
+            <button class="digits" value="7">7</button>
+            <button class="digits" value="8">8</button>
+            <button class="digits" value="9">9</button>
+            <button class="operators" value="*">&times</button>
+          </div>
+          <div class="row3">
+            <button class="digits" value="4">4</button>
+            <button class="digits" value="5">5</button>
+            <button class="digits" value="6">6</button>
+            <button class="operators" value="-">-</button>
+          </div>
+          <div class="row4">
+            <button class="digits" value="1">1</button>
+            <button class="digits" value="2">2</button>
+            <button class="digits" value="3">3</button>
+            <button class="operators" value="+">+</button>
+          </div>
+          <div class="row5">
+            <button value="negative">+/-</button>
+            <button class="digits" value="0">0</button>
+            <button value="." id="decimalPoint">.</button>
+            <button class="equalSign" value="=">=</button>
+          </div>
         </div>
-    
-
+      </div>
     </div>
     <div class="copyright">
-        <p>Built by <span>chopipi &copy;</span> 2024</p>
-        <a href="https://github.com/turtle-jin"><img src="images/4961959_github_logo_icon.png" alt=""></a>
+      <p>Built by <span>chopipi &copy;</span> 2024</p>
+      <a href="https://github.com/turtle-jin"
+        ><img src="images/4961959_github_logo_icon.png" alt=""
+      /></a>
     </div>
     <audio src="audio/Cow sound effect.mp3" id="mooSound" loop></audio>
-</body>
+  </body>
 </html>
